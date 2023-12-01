@@ -5,7 +5,7 @@ Created on Fri Dec  1 07:22:38 2023
 @author: mark.patmore
 """
 
-''' simple solution to day1. first, replace the spelled out numbers with 
+''' simple solution to day1 (year 2023). first, replace the spelled out numbers with 
 their integer counterparts. Then run through each one and add numerical values 
 to a list. Concat the first and last values of each list and append them to 
 the final list. Lastly, just sum the final list. I didn't separate first and 
