@@ -21,21 +21,21 @@ with open("day1.txt", "r") as file:
         for i in range(len(x)):
             if x[i:i+3] == 'one':
                 x = x.replace('one', '1', 1)
-            if x[i:i+3] == 'two':
+            elif x[i:i+3] == 'two':
                 x = x.replace('two', '2', 1)
-            if x[i:i+5] == 'three':
+            elif x[i:i+5] == 'three':
                 x = x.replace('three', '3', 1)
-            if x[i:i+4] == 'four':
+            elif x[i:i+4] == 'four':
                 x = x.replace('four', '4', 1)        
-            if x[i:i+4] == 'five':
+            elif x[i:i+4] == 'five':
                 x = x.replace('five', '5', 1)  
-            if x[i:i+3] == 'six':
+            elif x[i:i+3] == 'six':
                 x = x.replace('six', '6', 1)        
-            if x[i:i+5] == 'seven':
+            elif x[i:i+5] == 'seven':
                 x = x.replace('seven', '7', 1)   
-            if x[i:i+5] == 'eight':
+            elif x[i:i+5] == 'eight':
                 x = x.replace('eight', '8', 1)   
-            if x[i:i+4] == 'nine':
+            elif x[i:i+4] == 'nine':
                 x = x.replace('nine', '9', 1)            
         y = []
         for i in x:
