@@ -21,23 +21,23 @@ with open("day1.txt", "r") as file:
         # iterate thru line and replace spelled out numbers with their numerical counterparts
         for i in range(len(x)):
             if x[i:i+3] == 'one':
-                x = x.replace('one', '1', 1)
+                x = x.replace('one', '1e', 1)
             elif x[i:i+3] == 'two':
-                x = x.replace('two', '2', 1)
+                x = x.replace('two', '2o', 1)
             elif x[i:i+5] == 'three':
-                x = x.replace('three', '3', 1)
+                x = x.replace('three', '3e', 1)
             elif x[i:i+4] == 'four':
-                x = x.replace('four', '4', 1)        
+                x = x.replace('four', '4r', 1)        
             elif x[i:i+4] == 'five':
-                x = x.replace('five', '5', 1)  
+                x = x.replace('five', '5e', 1)  
             elif x[i:i+3] == 'six':
-                x = x.replace('six', '6', 1)        
+                x = x.replace('six', '6x', 1)        
             elif x[i:i+5] == 'seven':
-                x = x.replace('seven', '7', 1)   
+                x = x.replace('seven', '7n', 1)   
             elif x[i:i+5] == 'eight':
-                x = x.replace('eight', '8', 1)   
+                x = x.replace('eight', '8t', 1)   
             elif x[i:i+4] == 'nine':
-                x = x.replace('nine', '9', 1)  
+                x = x.replace('nine', '9e', 1)   
         # Iterate thru cleaned line and grab all numerical values.
         # Concat first and last numerical values and add to final list
         y = []
