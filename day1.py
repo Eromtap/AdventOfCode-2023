@@ -16,8 +16,9 @@ code challenge, so I don't care about variable names lol.
 num_list = []
 
 with open("day1.txt", "r") as file:
+    #grab line of file
     for x in file:   
-
+        # iterate thru line and replace spelled out numbers with their numerical counterparts
         for i in range(len(x)):
             if x[i:i+3] == 'one':
                 x = x.replace('one', '1', 1)
@@ -36,13 +37,14 @@ with open("day1.txt", "r") as file:
             elif x[i:i+5] == 'eight':
                 x = x.replace('eight', '8', 1)   
             elif x[i:i+4] == 'nine':
-                x = x.replace('nine', '9', 1)            
+                x = x.replace('nine', '9', 1)  
+        # Iterate thru cleaned line and grab all numerical values.
+        # Concat first and last numerical values and add to final list
         y = []
         for i in x:
             if i.isnumeric():
                 y.append(i)
         num_string = y[0] + y[-1]
-    
         num_list.append(int(num_string))
 
 
