@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec  1 07:22:38 2023
-
+This is a test of github
 @author: mark.patmore
 """
 
